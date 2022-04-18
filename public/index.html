@@ -1,37 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="assets/logo.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <title>Spotify</title>
+    <link rel="stylesheet" href="/template/src/index.css" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body class="app">
+    <header class="header font-color">
+        <a href="/" class="link">
+            <img src="assets/user.png" alt="Профиль" width="54" height="54" />
+        </a>
+    </header>
+    <aside class="accordion font-color">
+        <a href="/" class="header__logo link">
+            <img src="assets/spotify.png" alt="Логотип" width="54" height="54" />
+            <h1 class="header__title">Spotify</h1>
+        </a><br/>
+        <ul class="tags font-color">
+            <li><a class="tag" href=""><img class='icons' src="assets/home.png" alt="Главная" width="20" height="20" />Главная</a></li>
+            <li><a class="tag" href=""><img class='icons' src="assets/searce.png" alt="Поиск" width="20" height="20" />Поиск</a></li>
+            <li><a class="tag" href=""><img class='icons' src="assets/album.png" alt="Моя медиатека" width="20" height="20" />Моя медиатека</a></li>
+            <br/><hr/><br/>
+            <!-- список плейлистов пользователя -->
+            <li><a class="tag" href="">ВК</a></li>
+            <li><a class="tag" href="">Мой плейлист №1</a></li>
+        </ul>
+    </aside>
+    <main class="content font-color">
+        <h2 class="category">Твои лучшие миксы</h2>
+        <div class="cards">
+            <div class="card">
+                <a href="">
+                    <img src="./assets/mix.png" class="card-image" alt="avatar" width="200" height="200">
+                    <div class="card-body">
+                        <div class="card-title font-color">
+                            Микс дня #2
+                        </div>
+                        <div class="card-artist font-color">
+                            Thomas Mraz, Yanix, DOPECLAVB и не только
+                        </div>
+                    </div>
+                </a>
+            </div>
+       
+            <div class="card">
+                <a href="">
+                    <img src="./assets/mix.png" class="card-image" alt="avatar" width="200" height="200">
+                    <div class="card-body">
+                        <div class="card-title font-color">
+                            Микс дня #2
+                        </div>
+                        <div class="card-artist font-color">
+                            Thomas Mraz, Yanix, DOPECLAVB и не только
+                        </div>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="card">
+                <a href="">
+                    <img src="./assets/mix.png" class="card-image" alt="avatar" width="200" height="200">
+                    <div class="card-body">
+                        <div class="card-title font-color">
+                            Микс дня #2
+                        </div>
+                        <div class="card-artist font-color">
+                            Thomas Mraz, Yanix, DOPECLAVB и не только
+                        </div>
+                    </div>
+                </a>
+            </div>
+       
+            <div class="card">
+                <a href="">
+                    <img src="./assets/mix.png" class="card-image" alt="avatar" width="200" height="200">
+                    <div class="card-body">
+                        <div class="card-title font-color">
+                            Микс дня #2
+                        </div>
+                        <div class="card-artist font-color">
+                            Thomas Mraz, Yanix, DOPECLAVB и не только
+                        </div>
+                    </div>
+                </a>
+            </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+            <div class="card">
+                <a href="">
+                    <img src="./assets/mix.png" class="card-image" alt="avatar" width="200" height="200">
+                    <div class="card-body">
+                        <div class="card-title font-color">
+                            Микс дня #2
+                        </div>
+                        <div class="card-artist font-color">
+                            Thomas Mraz, Yanix, DOPECLAVB и не только
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="">
+                    <img src="./assets/mix.png" class="card-image" alt="avatar" width="200" height="200">
+                    <div class="card-body">
+                        <div class="card-title font-color">
+                            Микс дня #2
+                        </div>
+                        <div class="card-artist font-color">
+                            Thomas Mraz, Yanix, DOPECLAVB и не только
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <h2 class="category">Только для тебя</h2>
+        <div class="cards">
+            <div class="card">
+                <a href="">
+                    <img src="./assets/mix.png" class="card-image" alt="avatar" width="200" height="200">
+                    <div class="card-body">
+                        <div class="card-title font-color">
+                            Микс дня #2
+                        </div>
+                        <div class="card-artist font-color">
+                            Thomas Mraz, Yanix, DOPECLAVB и не только
+                        </div>
+                    </div>
+                </a>
+            </div>
+       
+            <div class="card">
+                <a href="">
+                    <img src="./assets/mix.png" class="card-image" alt="avatar" width="200" height="200">
+                    <div class="card-body">
+                        <div class="card-title font-color">
+                            Микс дня #2
+                        </div>
+                        <div class="card-artist font-color">
+                            Thomas Mraz, Yanix, DOPECLAVB и не только
+                        </div>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="card">
+                <a href="">
+                    <img src="./assets/mix.png" class="card-image" alt="avatar" width="200" height="200">
+                    <div class="card-body">
+                        <div class="card-title font-color">
+                            Микс дня #2
+                        </div>
+                        <div class="card-artist font-color">
+                            Thomas Mraz, Yanix, DOPECLAVB и не только
+                        </div>
+                    </div>
+                </a>
+            </div>
+       
+            <div class="card">
+                <a href="">
+                    <img src="./assets/mix.png" class="card-image" alt="avatar" width="200" height="200">
+                    <div class="card-body">
+                        <div class="card-title font-color">
+                            Микс дня #2
+                        </div>
+                        <div class="card-artist font-color">
+                            Thomas Mraz, Yanix, DOPECLAVB и не только
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="">
+                    <img src="./assets/mix.png" class="card-image" alt="avatar" width="200" height="200">
+                    <div class="card-body">
+                        <div class="card-title font-color">
+                            Микс дня #2
+                        </div>
+                        <div class="card-artist font-color">
+                            Thomas Mraz, Yanix, DOPECLAVB и не только
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="">
+                    <img src="./assets/mix.png" class="card-image" alt="avatar" width="200" height="200">
+                    <div class="card-body">
+                        <div class="card-title font-color">
+                            Микс дня #2
+                        </div>
+                        <div class="card-artist font-color">
+                            Thomas Mraz, Yanix, DOPECLAVB и не только
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer font-color">
+        mvbannikova1808@gmail.com   &nbsp;&nbsp;&nbsp; 2022  &nbsp;&nbsp;&nbsp;  TensorSchool
+    </footer>
+</body>
 </html>
